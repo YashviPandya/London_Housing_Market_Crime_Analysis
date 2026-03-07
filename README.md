@@ -62,4 +62,4 @@ jupyter notebook notebooks/london_housing_crime_analysis.ipynb
 ---
 
 ## 📬 Contact
-**Yashvi Pandya** · [LinkedIn](http://www.linkedin.com/in/yashvipandya) · MSc Data Analytics, BPP University
+**Yashvi Pandya** · [LinkedIn](http://www.linkedin.com/in/yashvipandya) · MSc Data Analytics
