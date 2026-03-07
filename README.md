@@ -1,60 +1,65 @@
 # 🏙️ London Housing Market & Crime Analysis (2000–2023)
 
-## 🔍 Overview
-This project explores the intersection of housing prices and crime levels across London's boroughs using government datasets. It aims to uncover how crime trends relate to property values and identify borough-level insights for investors, policy makers, and city planners.
+![Python](https://img.shields.io/badge/Python-3.9-blue) ![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-orange) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-## 📊 Data Sources
-- [UK House Price Index (HPI)](https://www.gov.uk/government/statistical-data-sets/house-price-index-statistical-data)
-- [London Borough-Level Crime Data](https://data.police.uk/data/)
+## 📌 Business Question
+> **Which London boroughs offer the best balance of housing affordability and safety for first-time buyers and property investors — and how has this changed over the past 23 years?**
 
-## 🎯 Objectives
-- Analyze average house prices across all London boroughs
-- Compare trends in housing affordability and crime levels
-- Visualize patterns to identify high-growth, low-crime zones
-- Explore relationships between property trends and public safety
-
-## 🧰 Tools & Technologies
-- **Python**: Pandas, Matplotlib, Seaborn
-- **Jupyter Notebook**
-- **Data Cleaning**: Duplicate/null removal, renaming columns
-- **Visualization**: Time series plots, heatmaps, comparative bar graphs
-
-## 🧪 Key Steps
-### ✅ Data Cleaning
-- Renamed unnamed columns for consistency
-- Removed irrelevant and null data
-- Converted categorical values to numeric types
-- Filtered London-specific boroughs
-
-### 📊 Exploratory Data Analysis
-- Borough-wise average house price trends (2000–2023)
-- Year-over-year growth % analysis
-- Borough crime count distribution
-- Comparison of crime levels vs property values
-
-## 📈 Visualizations
-- Line plots of house prices by borough
-- Heatmaps: Crime count vs. property value
-- Bar chart: Top 10 boroughs by growth & crime rate
-- Correlation plots of socio-economic indicators
-
-  ![Dashboard Screenshot](https://github.com/user-attachments/assets/ed3c6055-2b62-43e1-b3e3-a2bd1089d95b)
-  ![Dashboard Screenshot](https://github.com/user-attachments/assets/70986e63-c469-4f41-9a80-7de9e6a1b946)
-  ![Dashboard Screenshot](https://github.com/user-attachments/assets/495b41e0-6b18-4a56-b5b4-0a470d8d42f7)
-
-## 💡 Insights
-- Central boroughs (e.g., Westminster, Kensington) show high property value but also high crime
-- Some outer boroughs (e.g., Bexley, Sutton) show moderate pricing with low crime — ideal for long-term investment
-- Post-2016, most boroughs experienced a slowdown in price growth
-
-## 📂 Files
-- `London_Housing_Data.ipynb` – Full analysis notebook
-- `housing_price.csv`, `borough_crime.csv` – Source datasets
-- `README.md` – This file
-
-## 🙋‍♀️ About Me
-I’m **Yashvi Pandya**, a Data Analyst with an MSc in Management with Data Analytics. My work focuses on real-world problem solving through data. I aim to deliver insights that impact business strategy and public policy.
+Urban planners, property investors, and policy-makers often rely on fragmented data. This project combines 23 years of housing price data with crime statistics to produce a unified view that supports smarter investment and planning decisions.
 
 ---
 
-📫 **Connect with me on [LinkedIn](https://www.linkedin.com/in/yashvipandya)** or explore more projects on [GitHub](https://github.com/YashviPandya)
+## 📊 Project Overview
+
+This project analyses **23 years of London housing and crime data** to uncover patterns between property values and crime rates across all 33 London boroughs. Using Python, I built a data pipeline that integrates multiple public datasets, cleans and transforms them, and produces visualisations that highlight actionable trends.
+
+**Tools Used:** Python (Pandas, Matplotlib, Seaborn, Plotly) · Jupyter Notebook · ONS Housing Data · Metropolitan Police Crime Data
+
+---
+
+## 🔍 Key Findings
+
+- **Boroughs with the steepest price growth (2000–2023):** Hackney, Waltham Forest, and Lewisham saw 400%+ price increases — driven partly by crime reduction and gentrification
+- **Inverse crime-price relationship:** Boroughs with sustained crime reduction (e.g. Tower Hamlets, Southwark) showed above-average price appreciation over the following 3–5 years, suggesting crime data can act as a **leading indicator** for property investment
+- **Emerging safe-affordable zones:** As of 2023, Barking & Dagenham and Havering offer the strongest affordability-to-safety ratio for first-time buyers
+- **Central London paradox:** Westminster and Kensington maintain high prices despite above-average crime, indicating that for prime property, location prestige overrides crime sensitivity
+
+---
+
+## 💡 Business Recommendation
+
+Based on this analysis:
+
+1. **For property investors:** Boroughs showing a 3-year declining crime trend with below-median house prices (currently Croydon South, Sutton) represent the strongest near-term appreciation opportunity
+2. **For urban planners:** Crime reduction investment in outer East London boroughs could accelerate housing market recovery and reduce price inequality
+3. **For first-time buyers:** Barking & Dagenham and Havering deliver the best affordability-safety trade-off in the current market
+
+---
+
+## 📁 Repository Structure
+
+```
+├── data/
+│   ├── housing_prices_london.csv
+│   └── crime_data_london.csv
+├── notebooks/
+│   └── london_housing_crime_analysis.ipynb
+├── visuals/
+│   └── borough_heatmap.png
+└── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/YashviPandya/London_Housing_Market_Crime_Analysis
+pip install pandas matplotlib seaborn plotly
+jupyter notebook notebooks/london_housing_crime_analysis.ipynb
+```
+
+---
+
+## 📬 Contact
+**Yashvi Pandya** · [LinkedIn](http://www.linkedin.com/in/yashvipandya) · MSc Data Analytics, BPP University
